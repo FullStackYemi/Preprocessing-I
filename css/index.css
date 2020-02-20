@@ -129,11 +129,19 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
-  border: 1px solid green;
 }
 html,
 body {
   height: 100%;
+}
+button {
+  height: 45px;
+  width: 200px;
+  border: 2px solid darkslategray;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: white;
+  background-color: darkslategray;
 }
 header {
   margin: 15px 0;
@@ -175,6 +183,10 @@ header a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: lightgray;
+  padding-top: 1rem;
+  border-radius: 18px;
+  margin: 0 5%;
 }
 @media (max-width: 500px) {
   .wrapper {
@@ -201,10 +213,50 @@ header a {
 }
 .wrapper .name {
   margin-left: 5%;
+  margin-bottom: 2%;
+}
+.wrapper .name h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.wrapper .name h3 {
+  font-size: 1.4rem;
 }
 @media (max-width: 500px) {
   .wrapper .name {
-    margin: 0 auto;
+    margin: 2% auto;
     text-align: center;
   }
+}
+.wrapper .btn-uc {
+  margin-left: 5%;
+  margin-bottom: 3%;
+}
+@media (max-width: 500px) {
+  .wrapper .btn-uc {
+    margin: 2% auto;
+    justify-content: center;
+  }
+}
+.wrapper2 {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  padding-top: 1rem;
+  border-radius: 20px;
+  margin: 0 5%;
+}
+@media (max-width: 500px) {
+  .wrapper2 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.wrapper2 .listen {
+  width: 45%;
+  text-align: left;
+}
+.wrapper2 h2 {
+  font-size: 1.9rem;
+  font-weight: bold;
 }
