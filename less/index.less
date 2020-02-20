@@ -58,42 +58,79 @@ html, body {
 	height: 100%;	
 }
 
-.container {
-	max-width: 800px;
-	margin: 0 auto;	
-}
-
 header {
-	border-bottom: 1px solid white;
-	margin: 20px 0;
-	
-}
-
-nav {
-	width: 90%;
+	margin: 15px 0;
+	padding: 15px 0;
 	display: flex;
-	justify-content: flex-end;
-	flex-wrap: nowrap;
-	padding: 0 5%;
+	justify-content: space-around;
+
+	@media(max-width: 500px){
+		flex-direction: column;
+		align-items: center;
+	} //Closes the media query for header
+
+	nav {
+		margin-left: 282px;
+		justify-content: center;
+
+		@media(max-width: 500px){
+			margin-left: 0;
+		}
+	} //Closes the media query for the nav
+
+	a {
+		margin-left: 20px;
+		font-size: 1.2rem;
+		color: black;
+		text-decoration: none;
+	}
 }
 
-nav .links {
-	// display: flex;
-	// justify-content: space-between;
-}
-
-.links a {	
-	text-decoration: none;
-	color: black;
-	font-weight: bold;
-}
-
-
-footer {
-	width: 90%;
-	display: flex;
-	justify-content: center;
+.upper-content {
+	width: 100%;
 	margin: 0 auto;
-	padding-top: 2%;
-	background-color: gray;
+
+	@media(max-width: 500px){
+		margin-left: 0;
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	@media(max-width: 500px){
+		margin: 0;
+	}
+
+
+	img {
+		height: 250px;
+		margin-top: 3%;
+		margin-left: 5%;
+		margin-bottom: 3%;
+
+		@media(max-width: 500px){
+			margin: 0 auto;
+			justify-content: center;
+		}
+	}
+
+	.top-image {
+		@media(max-width: 500px){
+			margin: 0 auto;
+			justify-content: center;
+		}
+	}
+
+	.name {
+		margin-left: 5%;
+		
+
+		@media(max-width: 500px){
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
 }
